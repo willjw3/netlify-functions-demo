@@ -1,0 +1,5 @@
+
+    const cmd = require("C:/Users/Will/Desktop/development/netlify/netlify-functions-demo/node_modules/gatsby/dist/commands/develop-process.js");
+    const args = {"_":["develop"],"verbose":false,"no-color":false,"no-colors":false,"noColors":false,"noColor":false,"json":false,"H":"localhost","host":"localhost","p":"8000","port":53633,"c":"","cert-file":"","certFile":"","k":"","key-file":"","keyFile":"","ca-file":"","caFile":"","graphql-tracing":false,"graphqlTracing":false,"$0":"gatsby","directory":"C:\\Users\\Will\\Desktop\\development\\netlify\\netlify-functions-demo","browserslist":[">0.25%","not dead"],"sitePackageJson":{"name":"netlify-functions-demo","version":"1.0.0","description":"","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":[],"author":"","license":"ISC","dependencies":{"dotenv":"^8.2.0","express":"^4.17.1","gatsby":"^2.29.2","node-fetch":"^2.6.1","react":"^17.0.1","react-dom":"^17.0.1"}},"report":{"errorMap":{}},"useYarn":false,"proxyPort":8000,"ssl":null,"debugInfo":null};
+    cmd(args);
+  
