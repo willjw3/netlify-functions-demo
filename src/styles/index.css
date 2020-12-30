@@ -2,6 +2,9 @@ body, html, div, h1, h2 {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+ul {
+    list-style: none;
+}
 
 /*Begin Home Page*/
 .index {
@@ -14,16 +17,21 @@ body, html, div, h1, h2 {
 }
 .main {
     width: 40%;
-    height: 70vh;
+    height: 100%;
     margin: auto;
 }
 .main h1 {
     text-align: center;
-    margin: 60px 0;
-    border-bottom: 1px solid;
+    margin: 30px 0;
+    border-bottom: 3px solid;
 }
-.main ul li {
+.main p {
     font-size: 1.25rem;
+    /* border: 0.5px solid gray;
+    border-radius: 2px; */
+    padding: 10px;
+    text-align: center;
+    
 }
 /*End Home Page*/
 

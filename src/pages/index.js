@@ -4,35 +4,24 @@ import Footer from "../components/footer"
 import "../styles/index.css"
 
 const Index = () => {
-    const [quotes, setQuotes] = useState([])
-
-    useEffect(() => {
-        const getListElements = async () => {
-            const response = await fetch("/.netlify/functions/geturl")
-            const elements = await response.json()
-            console.log(elements.quotes)
-            setQuotes(elements.quotes)
-        }
-        getListElements()
-    }, [])
-
-
     
     return (
         <div className="index">
             <Header />
             <div className="main">
                 <h1>The List</h1>
-                <ul>
-                    {
-                        quotes && quotes.map((quote, i) => {
-                            return <li key={i}>{quote.author}</li>
-                        })
-                    }
-                    {/* <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li> */}
-                </ul>
+                <div>
+                    <p>Item 1</p>
+                    <p>Item 2</p>
+                    <p>Item 3</p>
+                    <p>Item 4</p>
+                    <p>Item 5</p>
+                    <p>Item 6</p>
+                    <p>Item 7</p>
+                    <p>Item 8</p>
+                    <p>Item 9</p>
+                    <p>Item 10</p>
+                </div>
             </div>
             <Footer />
         </div>
