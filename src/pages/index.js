@@ -9,7 +9,7 @@ const Index = () => {
     
     useEffect(() => {
         const getBeers = async () => {
-            const response = await fetch("http://localhost:49982/getbeers")
+            const response = await fetch("/.netlify/functions/getbeers")
             const data = await response.json()
             console.log(data)
             setBeers(data)
