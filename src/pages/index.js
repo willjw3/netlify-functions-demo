@@ -6,15 +6,15 @@ import fetch from "node-fetch"
 
 const Index = () => {
     const [beers, setBeers] = useState([])
-    
+
     useEffect(() => {
-        const getBeers = async () => {
-            const response = await fetch("/.netlify/functions/getbeers")
+        const getBeerList = async () => {
+            const response = await fetch("http://localhost:55023/getbeerlist")
             const data = await response.json()
             console.log(data)
             setBeers(data)
         }
-        getBeers()
+        getBeerList()
     }, [])
     console.log(beers.beers && beers.beers)
     return (
@@ -24,11 +24,11 @@ const Index = () => {
                 <h1>The List</h1>
                 <div>
                     {
-                       beers.beers && beers.beers.map((beer, i) => {
-                           return (
-                               <p>{beer.beer}</p>
-                           )
-                       }) 
+                        beers.beers && beers.beers.map((beer, i) => {
+                            return (
+                                <p key={i}>{beer.beer}</p>
+                            )
+                        })
                     }
                 </div>
             </div>
